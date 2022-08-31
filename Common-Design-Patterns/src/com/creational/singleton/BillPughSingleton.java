@@ -15,7 +15,7 @@ public class BillPughSingleton implements Serializable{
 	}
 	
 	private static class SingletonHelper{
-		private static BillPughSingleton singleton = new BillPughSingleton();
+		private static BillPughSingleton singleton = new BillPughSingleton() ;
 		
 	}
 	
@@ -36,8 +36,8 @@ public class BillPughSingleton implements Serializable{
 	}
 
 	public static void main(String[] args) {
-		 
-
+		 BillPughSingleton singleton = BillPughSingleton.getInstance();
+		 System.out.println("Singleton class :"+singleton.toString());
 	}
 
 }

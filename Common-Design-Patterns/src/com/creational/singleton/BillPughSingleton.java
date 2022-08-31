@@ -28,6 +28,13 @@ public class BillPughSingleton implements Serializable{
 		return SingletonHelper.singleton;
 	}
 
+
+	@Override
+	protected Object clone() throws CloneNotSupportedException {
+		//return SingletonHelper.singleton;
+		throw new CloneNotSupportedException();
+	}
+
 	public static void main(String[] args) {
 		 
 

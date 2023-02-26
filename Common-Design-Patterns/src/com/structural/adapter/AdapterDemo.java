@@ -3,6 +3,15 @@ package com.structural.adapter;
 import java.util.ArrayList;
 import java.util.List;
 
+/*
+   -Legacy/Old class DomainProductBundleDocument implements Document interface .
+   -New NewDomainSubscriptionDocument class doesn't implement old interface , has few extra fields(like subscription id)
+    and has few common fields with old class DomainProductBundleDocument.
+   -To put new class' objects in collection of old class' objects , we create an Adapter class that implements old Document
+    interface,but it takes the new class' object as input parameter.
+
+
+ */
 public class AdapterDemo {
 
     public static void main(String [] args){

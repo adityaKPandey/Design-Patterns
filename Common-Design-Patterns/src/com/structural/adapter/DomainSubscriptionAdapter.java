@@ -24,6 +24,10 @@ public class DomainSubscriptionAdapter implements Document{
     return newDomainSubscriptionDocument.getRevision();
   }
 
+  private String getSubscriptionId(){
+    return newDomainSubscriptionDocument.getSubscriptionId();
+  }
+
   @Override
   public String toString() {
     return "DomainSubscriptionAdapter{" +

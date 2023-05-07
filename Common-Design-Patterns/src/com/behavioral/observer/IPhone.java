@@ -29,7 +29,7 @@ public class IPhone implements Stock{
 
   @Override
   public void update(String info) {
-    users.forEach(user -> user.update(info));
+    users.forEach(user -> user.notify(info));
   }
 
 }
